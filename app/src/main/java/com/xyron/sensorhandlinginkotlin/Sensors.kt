@@ -20,3 +20,19 @@ class ProximitySensor(
     sensorFeature = PackageManager.FEATURE_SENSOR_PROXIMITY,
     sensorType = Sensor.TYPE_PROXIMITY
 )
+
+class MagneticFieldSensor(
+    context: Context
+): AndroidSensor(
+    context = context,
+    sensorFeature = PackageManager.FEATURE_SENSOR_COMPASS,
+    sensorType = Sensor.TYPE_MAGNETIC_FIELD
+)
+
+class AccelerometerSensor(
+    context: Context
+): AndroidSensor(
+    context = context,
+    sensorFeature = PackageManager.FEATURE_SENSOR_ACCELEROMETER,
+    sensorType = Sensor.TYPE_ACCELEROMETER
+)
